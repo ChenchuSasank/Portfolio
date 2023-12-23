@@ -60,10 +60,6 @@ b {
     font-family: cursive;
 }
 
-p {
-    color: #fff;
-}
-
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -89,8 +85,8 @@ p {
 }
 
 .home-img img {
-    width: 22.5vw;
-    height: 25vw;
+    width: 32vw;
+    height: 40vw;
     float: right;
     padding: 70px;
 }
@@ -116,13 +112,6 @@ span {
     height: 600px;
     border-radius: 50%;
     margin-bottom: 1rem;
-}
-
-.sasank {
-    color: var(--main-color);
-    font-family: cursive;
-    font-size: 20px;
-    color: #fff;
 }
 
 .home-content h1 {
@@ -178,50 +167,12 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-}
-
-.btns {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--login-signup-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--login-signup-color);
-    font-size: 2.6rem;
-    color: #fff;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-}
-
-.btn:hover {
-    box-shadow: none;
-}
-
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     background: var(--bg-color);
-}
-
-.about-img img {
-    width: 20vw;
-    height: 20vw;
-    float: left;
-    border-radius: 100%;
-    padding: 20px;
 }
 
 .heading {
@@ -243,10 +194,6 @@ span {
     font-size: 2.5rem;
     margin: 2rem 0 3rem;
     text-align: justify;
-}
-
-.about-content a {
-    color: #fff;
 }
 
 .skills h2 {
@@ -283,22 +230,20 @@ span {
     transform: scale(1.02);
 }
 
-.skills-box i {
-    font-size: 7rem;
-    color: var(--main-color);
-}
-
 .skills-box h3 {
     font-size: 2.6rem;
     color: #fff;
 }
 
 .skills-box p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     margin: 1rem 0 3rem;
 }
 
 .project {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     background: var(--bg-color);
 }
 
@@ -307,58 +252,48 @@ span {
     color: #fff;
 }
 
-.project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.project-box p {
+    background: linear-gradient(rgba(0, 0, 0, .7), var(--main-color));
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
 }
 
-.project-container .project-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
+.project-container {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.project-box {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
 }
 
 .project-box img {
     width: 100%;
-    border-radius: 8px; /* Add rounded corners to the image */
-}
-
-.project-box {
-    width: 38%;
-    margin-bottom: 20px;
-    position: relative;
+    height: auto;
+    border-radius: 18px;
 }
 
 .project-layer {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    padding: 30px;
+    background: linear-gradient(rgba(0, 0, 0, .7), var(--main-color));
+    padding: 20px;
     color: #fff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-}
-
-.project-box .project-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
     transform: translateY(100%);
+    transition: transform 0.3s ease;
 }
 
 .project-box:hover .project-layer {
@@ -366,28 +301,8 @@ span {
 }
 
 .project-layer h4 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.project-layer p {
-    font-size: 2.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.project-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-}
-
-.project-layer a i {
-    font-size: 2rem;
-    border-radius: 100%;
-    color: var(--second-bg-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .contact {
